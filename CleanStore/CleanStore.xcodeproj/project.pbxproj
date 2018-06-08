@@ -14,6 +14,12 @@
 		8EAAE1FE20C7488300EB407F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAAE1FC20C7488300EB407F /* LaunchScreen.storyboard */; };
 		8EAAE20920C7488300EB407F /* CleanStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAE20820C7488300EB407F /* CleanStoreTests.swift */; };
 		8EAAE21420C7488300EB407F /* CleanStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAE21320C7488300EB407F /* CleanStoreUITests.swift */; };
+		8EAAE22920C86A9F00EB407F /* CreateOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAE22320C86A9F00EB407F /* CreateOrderPresenter.swift */; };
+		8EAAE22A20C86A9F00EB407F /* CreateOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAE22420C86A9F00EB407F /* CreateOrderWorker.swift */; };
+		8EAAE22B20C86A9F00EB407F /* CreateOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAE22520C86A9F00EB407F /* CreateOrderRouter.swift */; };
+		8EAAE22C20C86A9F00EB407F /* CreateOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAE22620C86A9F00EB407F /* CreateOrderModels.swift */; };
+		8EAAE22D20C86A9F00EB407F /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAE22720C86A9F00EB407F /* CreateOrderViewController.swift */; };
+		8EAAE22E20C86A9F00EB407F /* CreateOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAE22820C86A9F00EB407F /* CreateOrderInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		8EAAE20F20C7488300EB407F /* CleanStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAAE21320C7488300EB407F /* CleanStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanStoreUITests.swift; sourceTree = "<group>"; };
 		8EAAE21520C7488300EB407F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EAAE22320C86A9F00EB407F /* CreateOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderPresenter.swift; sourceTree = "<group>"; };
+		8EAAE22420C86A9F00EB407F /* CreateOrderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderWorker.swift; sourceTree = "<group>"; };
+		8EAAE22520C86A9F00EB407F /* CreateOrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderRouter.swift; sourceTree = "<group>"; };
+		8EAAE22620C86A9F00EB407F /* CreateOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderModels.swift; sourceTree = "<group>"; };
+		8EAAE22720C86A9F00EB407F /* CreateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
+		8EAAE22820C86A9F00EB407F /* CreateOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +149,12 @@
 		8EAAE22220C748AC00EB407F /* CreateOrder */ = {
 			isa = PBXGroup;
 			children = (
+				8EAAE22320C86A9F00EB407F /* CreateOrderPresenter.swift */,
+				8EAAE22420C86A9F00EB407F /* CreateOrderWorker.swift */,
+				8EAAE22520C86A9F00EB407F /* CreateOrderRouter.swift */,
+				8EAAE22620C86A9F00EB407F /* CreateOrderModels.swift */,
+				8EAAE22720C86A9F00EB407F /* CreateOrderViewController.swift */,
+				8EAAE22820C86A9F00EB407F /* CreateOrderInteractor.swift */,
 			);
 			path = CreateOrder;
 			sourceTree = "<group>";
@@ -272,8 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EAAE22C20C86A9F00EB407F /* CreateOrderModels.swift in Sources */,
+				8EAAE22E20C86A9F00EB407F /* CreateOrderInteractor.swift in Sources */,
+				8EAAE22A20C86A9F00EB407F /* CreateOrderWorker.swift in Sources */,
+				8EAAE22D20C86A9F00EB407F /* CreateOrderViewController.swift in Sources */,
 				8EAAE1F620C7488200EB407F /* ViewController.swift in Sources */,
+				8EAAE22B20C86A9F00EB407F /* CreateOrderRouter.swift in Sources */,
 				8EAAE1F420C7488200EB407F /* AppDelegate.swift in Sources */,
+				8EAAE22920C86A9F00EB407F /* CreateOrderPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XSD48X5JC4;
 				INFOPLIST_FILE = CleanStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XSD48X5JC4;
 				INFOPLIST_FILE = CleanStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
